@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  flask_app:
+    build: .
+    ports:
+      - "5001:5001"
+    depends_on:
+      - postgres
+    environment:
+      SQLALCHEMY_DATABASE_URI: postgresql://postgres:0000@postgres:5432/Service-Avito
+  postgres:
+    image: postgres:latest
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_PASSWORD=0000
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=Service-Avito
