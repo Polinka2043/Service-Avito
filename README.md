@@ -44,9 +44,5 @@
 - Установите [Docker](https://www.docker.com/get-started) на вашем компьютере.
 - Убедитесь, что у вас установлен [Docker Compose](https://docs.docker.com/compose/install/).
 
-### Клонирование репозитория
 
-```bash
-git clone https://github.com/ваш-логин/ваш-репозиторий.git
-cd ваш-репозиторий
 
